@@ -17,7 +17,7 @@ h1{
 }
 
 
-.Square{
+.box{
   height: 100px;
   width: 100px;
   font-size: 80pt;
@@ -26,30 +26,27 @@ h1{
 
   </style>
   </head>
-  <body onload="startGame()">
+  <body onload= "startGame()">
     <<h1>Welcome to Tic Tac Toe</h1>
-    <div id = "message"> place holder
-
-    </div>
+    <div id = "message"> This is where who goes next goes
+      </div>
     <table border= 1>
       <<tr>
-        <<td class = "Square" onClick="NextMove(this)"></td>
-        <<td class = "Square" onClick="NextMove(this)"></td>
-        <<td class = "Square" onClick="NextMove(this)"></td>
+        <<td class = "box" id = "s1" onClick="nextMove(this)"></td>
+        <<td class = "box" id = "s2" onClick="nextMove(this)"></td>
+        <<td class = "box" id = "s3" onClick="nextMove(this)"></td>
       </tr>
       <<tr>
-        <<td class = "Square" onClick="NextMove(this)"></td>
-        <<td class = "Square" onClick="NextMove(this)"></td>
-        <<td class = "Square" onClick="NextMove(this)"></td>
+        <<td class = "box" id = "s4" onClick="nextMove(this)"></td>
+        <<td class = "box" id = "s5" onClick="nextMove(this)"></td>
+        <<td class = "box" id = "s6" onClick="nextMove(this)"></td>
       </tr>
       <<tr>
-        <<td class = "Square" onClick="NextMove(this)"></td>
-        <<td class = "Square" onClick="NextMove(this)"></td>
-        <<td class = "Square" onClick="NextMove(this)"></td>
-<script src = TicTacToe.js></script>
-      </tr>
-      <table>
-
+        <<td class = "box" id = "s7" onClick="nextMove(this)"></td>
+        <<td class = "box" id = "s8" onClick="nextMove(this)"></td>
+        <<td class = "box" id = "s9" onClick="nextMove(this)"></td>
+        </tr>
       </table>
+      <script src="TicTacToe.js"></script>
   </body>
 </html>
