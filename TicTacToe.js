@@ -43,6 +43,7 @@ if (checkRow(1, 2, 3, move) ||
   return result;
 }
 
+
 function checkRow(a, b, c, move) {
 var result = false;
 if (getBox(a) == move && getBox(b) == move && getBox(c) == move) {
