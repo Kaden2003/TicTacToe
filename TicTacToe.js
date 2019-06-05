@@ -18,7 +18,7 @@ function nextMove(box){
 
 function playerTurn() {
    if (checkwinners(document.turn)){
-    setMessage("Congrats " + document.turn + ", you won!")
+    setMessage("Congratulations " + document.turn + ", you won!")
   } else if (document.turn == "X"){
     document.turn = "O";
       setMessage("It's " + document.turn + " 's turn!'")
